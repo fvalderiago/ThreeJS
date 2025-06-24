@@ -23,6 +23,7 @@ const mat = new THREE.MeshStandardMaterial({
     color: 0xffffff,
     flatShading: true
 });
+
 const mesh = new THREE.Mesh(geo, mat);
 scene.add(mesh);
 
@@ -30,6 +31,7 @@ const wireMat = new THREE.MeshBasicMaterial({
     color: 0xffffff,
     wireframe: true
 });
+
 const wireMesh = new THREE.Mesh(geo, wireMat);
 wireMesh.scale.setScalar(1.001);
 mesh.add(wireMesh);
